@@ -2,11 +2,11 @@ package com.company;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class MySweetProgram {
+    Collection<String> stuff;
+
     public static void main(String[] args) throws FileNotFoundException {
        /* Scanner in = new Scanner(System.in);
         System.out.println("Enter an array size to store numbers then press enter");
@@ -35,5 +35,33 @@ public class MySweetProgram {
         }
         file.close();
 
+        System.out.println('\n');
+
+        MySweetProgram p = new MySweetProgram();
+        p.stuff = new ArrayList<String>();
+
+
+
+        LinkedList<String> bncWorkers = new LinkedList<String>();
+
+        //queue
+        bncWorkers.add("Albie");
+        bncWorkers.add("Sammie");
+        bncWorkers.add("Abel");
+
+        System.out.println(bncWorkers.remove());
+        System.out.println(bncWorkers.remove());
+        System.out.println(bncWorkers.remove());
+
+        //stack
+        bncWorkers.push("Ato");
+        bncWorkers.push("Missy");
+        bncWorkers.push("Gang");
+
+        System.out.println('\n');
+
+        System.out.println(bncWorkers.removeFirst());
+        System.out.println(bncWorkers.remove());
+        System.out.println(bncWorkers.pop());
     }
 }
